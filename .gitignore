@@ -1,0 +1,64 @@
+# Ignore everything in the root except the "api" and "frontend" directories.
+*
+!/api/
+!/frontend/
+
+# Ignore files in the root directory
+!.gitignore
+
+# API (C# ASP.NET Web API)
+api/bin/
+api/obj/
+api/.vs/
+api/*.user
+api/*.suo
+api/*.userosscache
+api/*.sln.docstates
+
+# Rider (JetBrains)
+api/.idea/
+api/.idea/**
+
+# Node modules for the frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Dependency directories
+frontend/.pnp/
+frontend/.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# Production
+frontend/build/
+
+# Miscellaneous
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+
+# IDEs and editors
+**/.idea/
+**/.vscode/
+**/.vscode/*
+**/*.code-workspace
+
+# Optional npm cache directory
+**/.npm
