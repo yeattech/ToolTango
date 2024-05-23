@@ -1,64 +1,44 @@
-# Ignore everything in the root except the "api" and "frontend" directories.
-*
-!/api/
-!/frontend/
+# Ignore Node.js dependencies for the frontend
+frontend/node_modules/
 
-# Ignore files in the root directory
-!.gitignore
-
-# API (C# ASP.NET Web API)
+# Ignore .NET dependencies for the API
 api/bin/
 api/obj/
+
+# Ignore Visual Studio files and directories for the API
 api/.vs/
-api/*.user
-api/*.suo
-api/*.userosscache
-api/*.sln.docstates
 
-# Rider (JetBrains)
-api/.idea/
-api/.idea/**
-
-# Node modules for the frontend
-frontend/node_modules/
+# Ignore Next.js build output
 frontend/.next/
 frontend/out/
+
+# Ignore build output for both API and frontend
+api/bin/
+api/obj/
+frontend/.next/
+frontend/out/
+
+# Ignore frontend environment files
 frontend/.env
 frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
+frontend/.env.*.local
+frontend/.env.build
+frontend/.env.production
+frontend/.env.test
 
-# Logs
-**/npm-debug.log*
-**/yarn-debug.log*
-**/yarn-error.log*
-**/pnpm-debug.log*
+# Ignore backend environment files
+api/appsettings.json
+api/appsettings.Development.json
+api/appsettings.Production.json
 
-# Dependency directories
-frontend/.pnp/
-frontend/.pnp.js
+# Ignore IDE/Editor files
+.vscode/
+.idea/
 
-# Testing
-frontend/coverage/
+# Ignore npm debug log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Next.js build output
-frontend/.next/
-frontend/out/
-
-# Production
-frontend/build/
-
-# Miscellaneous
-**/.DS_Store
-**/Thumbs.db
-**/*.log
-
-# IDEs and editors
-**/.idea/
-**/.vscode/
-**/.vscode/*
-**/*.code-workspace
-
-# Optional npm cache directory
-**/.npm
+# Ignore any package-lock.json files
+package-lock.json
