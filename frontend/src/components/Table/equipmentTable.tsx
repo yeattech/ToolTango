@@ -34,7 +34,15 @@ const rows = [
     createData('Item A', 'New', 100, 'Hardware'),
     createData('Item B', 'Used', 30, 'Software'),
     createData('Item C', 'New', 50, 'Hardware'),
-    createData('Item D', 'Used', 20, 'Software'),
+    createData('Item D', 'Used', 2, 'Software'),
+    createData('Item E', 'Damaged', 20, 'Software'),
+    createData('Item F', 'Used', 12, 'Software'),
+    createData('Item G', 'New', 13, 'Hardware'),
+    createData('Item H', 'Used', 10, 'Software'),
+    createData('Item I', 'Used', 20, 'Hardware'),
+    createData('Item J', 'New', 5, 'Hardware'),
+    createData('Item K', 'Used', 2, 'Hardware'),
+    createData('Item L', 'Used', 4, 'Software'),
     // Add more rows as needed
 ];
 
