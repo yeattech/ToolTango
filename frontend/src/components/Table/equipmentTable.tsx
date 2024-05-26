@@ -100,22 +100,19 @@ export default function EquipmentTable () {
                         <MenuItem value="Hardware">Hardware</MenuItem>
                         <MenuItem value="Software">Software</MenuItem>
                     </Select>
-                    <Button variant="contained" color="primary" onClick={handleAddClick}>
-                        Add
-                    </Button>
                 </div>
 
             </div>
             <TableContainer component={Paper} className="shadow-md">
                 <Table>
                     <TableHead>
-                        <TableRow>
-                            <TableCell>Name</TableCell>
-                            <TableCell>Condition</TableCell>
-                            <TableCell>Quantity</TableCell>
-                            <TableCell>Type</TableCell>
-                            <TableCell>Actions</TableCell>
-                        </TableRow>
+                    <TableRow>
+                        <TableCell className="font-semibold">Name</TableCell>
+                        <TableCell className="font-semibold">Condition</TableCell>
+                        <TableCell className="font-semibold">Quantity</TableCell>
+                        <TableCell className="font-semibold">Type</TableCell>
+                        <TableCell className="font-semibold">Actions</TableCell>
+                    </TableRow>
                     </TableHead>
                     <TableBody>
                         {filteredRows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row, index) => (
@@ -125,8 +122,8 @@ export default function EquipmentTable () {
                                 <TableCell>{row.quantity}</TableCell>
                                 <TableCell>{row.type}</TableCell>
                                 <TableCell>
-                                    <IconButton color="primary"><EditIcon /></IconButton>
-                                    <IconButton color="secondary"><DeleteIcon /></IconButton>
+                                    <IconButton className='text-orange-600'><EditIcon /></IconButton>
+                                    <IconButton className='text-red-600'><DeleteIcon /></IconButton>
                                 </TableCell>
                             </TableRow>
                         ))}
